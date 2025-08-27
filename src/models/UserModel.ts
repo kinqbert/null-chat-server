@@ -55,5 +55,11 @@ UserModel.init(
     tableName: "users",
     modelName: "User",
     timestamps: false,
+    indexes: [
+      {
+        unique: true,
+        fields: ["email"],
+      },
+    ],
   },
 );

@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 import { CONFIG } from "src/config/configuration";
 
-const sequelize = new Sequelize(CONFIG.DATABASE_URL, { logging: false });
+const sequelize = new Sequelize(CONFIG.DATABASE_URL, { logging: false, timezone: "Etc/UTC" });
 
 export default sequelize;
